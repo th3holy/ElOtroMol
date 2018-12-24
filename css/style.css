@@ -4,3 +4,19 @@ body{
 .container-body{
     margin-top:15px; 
 }
+.navbar{
+    height: 50px;
+}
+a{
+    display: flex;
+    position: relative;
+    margin-top:-50px;
+}
+.logo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+}
