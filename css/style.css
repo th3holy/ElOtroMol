@@ -3,24 +3,31 @@ body{
     background-color: #E76622;
 }
 .container-top{
-    margin-top:15px; 
+    margin-top: 15px; 
 }
 .direccion{
+    display: flex;
     color: black;
     text-decoration:none;
+    font-size: 10px;
 }
+
 .direccion:hover{
     text-decoration: none;
     color: black;
 }
 .geo{
-    width: 30px;
+    display: flex;
+    width: 15px;
     height: auto;
 }
 .ubicacion{
+    margin-top: -20px;
+    display: flex;
     width: 50%;;
 }
 .contact{
+    margin-top: -20px;
     display: flex;
     align-items: center;
     width: 50%;
@@ -28,11 +35,15 @@ body{
 }
 .fono{
     display: flex;
-    padding-top: 15px;
+    font-size: 10px;
+    margin-top:15px; 
 }
 .facebook{
-    width: 35px;
+    display: flex;
+    width: 17px;
+    margin: 10px;
 }
 #instagram{
-    width: 30px;
+    display: flex;
+    width: 15px;
 }
