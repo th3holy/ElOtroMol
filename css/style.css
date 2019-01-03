@@ -1,49 +1,81 @@
+@font-face {
+  font-family: "Zamenhof";
+  src: url("/media/Font/Zamenhof/Zamenhof\ Inline.ttf");
+}
 
 body{
     background-color: #E76622;
-}
-.container-top{
-    margin-top: 15px; 
-}
-.direccion{
-    display: flex;
-    color: black;
-    text-decoration:none;
-    font-size: 10px;
 }
 
 .direccion:hover{
     text-decoration: none;
     color: black;
 }
+
 .geo{
-    display: flex;
     width: 15px;
-    height: auto;
+    margin: 5px;
+}
+
+.infoHeader{ 
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoHeader a, .infoHeader p{
+    color: black;
+    text-decoration:none;
+    font-size: 12px;
+    font-weight: bold;
 }
 .ubicacion{
-    margin-top: -20px;
-    display: flex;
-    width: 50%;;
+  display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 .contact{
-    margin-top: -20px;
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
     align-items: center;
-    width: 50%;
-    justify-content: end;
 }
+
 .fono{
-    display: flex;
     font-size: 10px;
     margin-top:15px; 
 }
 .facebook{
-    display: flex;
+    
     width: 17px;
     margin: 10px;
 }
 #instagram{
     display: flex;
     width: 15px;
+}
+.jumbotron{
+    background-image:  linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),url(/media/banner/nick-de-partee-1146477-unsplash.jpg);
+    background-size: 100%;
+    text-align: center;
+   
+   
+}
+
+.titulo{
+    font-family: "Zamenhof";
+    color:white;
+    font-size: 70px;
+}
+.subtitulo{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
 }
