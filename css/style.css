@@ -102,10 +102,6 @@ body{
 .foto {
     width: 100%;
     height: 400px;
-    /*display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;*/
     overflow: hidden;
 }
 .foto img{
@@ -114,6 +110,10 @@ body{
 }
 .social{
     background-color:#FDF9FA;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .social h3{
     font-weight: bold;
@@ -121,7 +121,102 @@ body{
     color: #E76622
 }
 
+.social #face{
+    display: inline-block;
+    background-color:#3b5998;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 8px 30px;
+    border-radius: 25px;
+    margin: 30px;   
+}
 
+.social a i{
+    margin-right: 5px;
+    font-size: 24px;
+}
+.social #insta{
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 8px 30px;
+    border-radius: 25px;
+    background: #e20b4f;
+  
+}
+.galeria{
+    background-color: white;
+    margin-right: 0px;
+    margin-left: 0;
+    padding: 20px 15px;
+}
 
+.mejor{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+.grilla{
+    width: 100%;
+    background-color: greenyellow;
+    height: 1000px;
+}
 
-
+.historia{
+    background-image: url(/media/banner/ImagenSinLogo.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 370px;
+    background-position:bottom; 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon img{
+    width: 250px;
+    margin: 100px;
+    -webkit-box-shadow: 0px 6px 22px 3px rgba(0,0,0,0.19);
+    -moz-box-shadow: 0px 6px 22px 3px rgba(0,0,0,0.19);
+    box-shadow: 0px 6px 10px 3px rgba(0,0,0,0.19);
+    
+}
+.story h3,p{
+color: white;
+}
+.story h3{
+    font-family: "Zamenhof";
+}
+.preguntas{
+    background-color: white
+}
+.frecuente{
+  
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 30px 30px 0px 30px;
+}
+.accordion{
+  padding: 0px 20px 30px 20px;
+}
+.respuesta{
+    background-color: #E76622;
+    color: white;
+}
+.ask{
+    background-color: white;
+    border: solid 1.5px #E76622;
+}
+.btn-link {
+    color: black;
+}
+.btn-link:hover {
+    color: black;
+    text-decoration: none;
+}
