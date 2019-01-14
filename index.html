@@ -18,18 +18,15 @@
 
     <div class="container">
         <section class="container-top">
-            <nav  class="navbar navbar-light bg-light infoHeader" >
-              <div class="ubicacion">
-                <img class="geo" src="media/logo/icons8-marcador-480.png" alt="">
-                <a class="direccion" href="https://www.google.com/maps/place/G-380+51,+Melipilla,+Regi%C3%B3n+Metropolitana/@-33.5682143,-71.1792386,17z/data=!3m1!4b1!4m5!3m4!1s0x9662f7f6da6d9811:0xeb46a35818041a13!8m2!3d-33.5682143!4d-71.1770499">G-380 51, Melipilla, Region Metropolitana</a>
-              </div>
-              <div class="contact">
-                <p class="fono">+56 912345667</p>
-                <a href="https://www.facebook.com/pages/category/Clothing-Store/El-otro-Mol-219376282140014/"><img class="facebook" src="media/logo/icons8-facebook-filled-500.png" alt=""></a>
-                <a href="#"><img id="instagram" src="media/logo/noun_Camera_1841840.png" alt=""></a>
-              </div>
-            </nav>
+          <div class="direccion">
+            <a class="direccion" href="https://www.google.com/maps/place/G-380+51,+Melipilla,+Regi%C3%B3n+Metropolitana/@-33.5682143,-71.1792386,17z/data=!3m1!4b1!4m5!3m4!1s0x9662f7f6da6d9811:0xeb46a35818041a13!8m2!3d-33.5682143!4d-71.1770499"><i class="fas fa-map-marker-alt"></i> G-380 51, Melipilla, Region Metropolitana</a>
+          </div>
+
+          <div class="contacto">
+            <a href="tel:+56 912345667"><i class="fas fa-phone"></i> +56 912345667</a>
+          </div>
         </section>
+
         <!--banner-->
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
@@ -37,25 +34,45 @@
             <p class="subtitulo">ROPA AMERICANA</p>
           </div>
         </div>
+
         <!-- menu -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand logo" href="#"><img src="/media/logo/logo.jpg" alt=""></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto row opciones ">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-            </ul>
-            
+
+        <div class="menu_top">
+          <div class="logo">
+            <img class="img-fluid" src="/media/logo/logo.jpg" alt="Logo_El_Otro_Mol">
           </div>
-        </nav>
+          <div class="menu">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                
+                  <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Catalogo</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                          </li>
+                    </ul>
+                  </div>
+                </nav>
+          </div>
+        </div>
+        
+        
+        
+
+        <!-- /menu -->
+
+        
          <!--carrusel-->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
@@ -78,18 +95,23 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+
+
         <!--social-->
         <div class="social">
             <h3>Siguenos en nuestras redes sociales</h3>
-            <a id="face" href="#">
-              <i class="fab fa-facebook-square"></i>
-              El Otro Mol
-            </a>
-            <a id="insta" href="#">
-              <i class="fab fa-instagram"></i>
-              ElOtroMol
-            </a>
+            <div class="redes_sociales">
+              <a id="face" href="#">
+                <i class="fab fa-facebook-square"></i>
+                El Otro Mol
+              </a>
+              <a id="insta" href="#">
+                <i class="fab fa-instagram"></i>
+                ElOtroMol
+              </a>
+            </div>
         </div>
+
         <!--gleria-->
         <div class="galeria">
           <p class="mejor">LO MEJOR , LO LINDO, LO ORIGINAL,<br> LO QUE TE GUSTA O QUIZA NO... </p>
