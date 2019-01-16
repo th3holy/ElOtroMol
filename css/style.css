@@ -198,8 +198,8 @@ body{
 }
 .grilla{
     width: 100%;
-    background-color: greenyellow;
-    height: 1000px;
+    background-color:white;
+    
 }
 
 .historia{
@@ -320,7 +320,42 @@ a{
 a:hover{
     color:black;
 }
+/******************** "galeria" ********************/
+.grilla{
+    display: flex;
+    flex-flow: row ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-grilla img{
+    margin:30px;
 
+}
+/******************** "blog" ********************/
+.blog{
+    background-color: #FDF9FA;
+}
+.img-blog img{
+    width: 100%;
+}
+.img-blog{
+    padding: 40px;
+}
+.blog-texto{
+    padding:50px;
+}
+.blog-texto h3{
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px
+}
+.blog-texto p{
+    color: black;
+    font-size: 20PX;
+    line-height: 45px;
+
+}
 
 /********************  QUERIES  ********************/
 
@@ -367,12 +402,10 @@ a:hover{
     .story p{
         font-weight: bold;
     }
-  
-  
 }   
 @media (max-width: 720px){
     .ultimo{
-      display: flex;
+        display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;  
@@ -383,7 +416,6 @@ a:hover{
     }
     .mapa{
         width: 100%;
-
     }
     .btn-link{
         font-size: 13px;
