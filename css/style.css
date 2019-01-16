@@ -3,67 +3,44 @@
   src: url("/media/Font/Zamenhof/Zamenhof\ Inline.ttf");
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #E76622;
 }
 
-.direccion:hover{
-    text-decoration: none;
-    color: black;
-}
-
-.geo{
-    width: 15px;
-    margin: 5px;
-}
-
-.infoHeader{ 
-    height: 40px;
+/********************  Banner Superior  ********************/
+.container-top{
+    background: #fff;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-}
-
-.infoHeader a, .infoHeader p{
-    color: black;
-    text-decoration:none;
-    font-size: 12px;
-    font-weight: bold;
-}
-.ubicacion{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-.contact{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.fono{
-    color:black;
-    font-size: 10px;
-    margin-top:15px; 
-}
-.facebook{
+    padding: 5px 20px;
     
-    width: 17px;
-    margin: 10px;
 }
-#instagram{
-    display: flex;
-    width: 15px;
+
+.container-top a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    
 }
+/********************  /Banner superior  ********************/
+
+
 .jumbotron{
     background-image:  linear-gradient(
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),url(/media/banner/nick-de-partee-1146477-unsplash.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     margin-bottom: 0rem; 
 }
@@ -73,42 +50,86 @@ body{
     color:white;
     font-size: 70px;
 }
+
 .subtitulo{
     font-family: 'Open Sans', sans-serif;
     color: white;
     font-weight: bold;
     font-size: 20px;
 }
-.menu{
+
+
+
+/********************  MENU  ********************/
+
+.menu_top{
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: #FFF;
+    z-index: 1000;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
-}
-.logo{
-    position: absolute;
-    margin-top: 85px;
-    margin-left: 30px;
-    z-index: 1;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
-.logo img {
-    width: 100px;
-    height: auto;
-    -webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.67);
-    -moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.67);
-    box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.67);
-} 
+.menu_top .logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 40px;
+}
+
+.menu_top img {
+    width: 120px;
+    z-index: 1050;
+    box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.19);
+}
+
+.navbar{
+    font-weight: 700;
+    padding: 0 !important;
+}
+
+.active {
+    color: #fff !important;
+    background-color: #E76622;
+}
+
+.navbar ul li{
+    padding: 5px 5px;
+}
+
+.navbar-toggler{
+    margin: 5px;
+}
+
+/********************  /MENU  ********************/
+
+
+
+/********************  Slider  ********************/
+
+.slide{
+    max-height: 400px;
+    overflow: hidden;
+}
 
 .foto {
     width: 100%;
-    height: 400px;
-    overflow: hidden;
 }
+
 .foto img{
     width: 100%;
     margin-top:-100px;
 }
+
+/********************  /Slider  ********************/
+
+
+
 .social{
     background-color:#FDF9FA;
     display: flex;
@@ -116,10 +137,18 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .social h3{
     font-weight: bold;
     padding: 30px;
     color: #E76622
+}
+
+.redes_sociales{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .social #face{
@@ -137,6 +166,7 @@ body{
     margin-right: 5px;
     font-size: 24px;
 }
+
 .social #insta{
     display: inline-block;
     color: #fff;
@@ -145,8 +175,13 @@ body{
     padding: 8px 30px;
     border-radius: 25px;
     background: #e20b4f;
-  
 }
+
+
+
+
+
+
 .galeria{
     background-color: white;
     margin-right: 0px;
@@ -163,15 +198,15 @@ body{
 }
 .grilla{
     width: 100%;
-    background-color: greenyellow;
-    height: 1000px;
+    background-color:white;
+    
 }
 
 .historia{
     background-image: url(/media/banner/ImagenSinLogo.jpg);
     background-size: 100%;
     width: 100%;
-    height: 370px;
+  
     background-position:bottom; 
     display: flex;
     flex-flow: row nowrap;
@@ -277,11 +312,112 @@ color: white;
     text-align: end;
 }
 .endfono{
-    color: black:
+    color: black;
 }
 a{
     color: black;
 }
 a:hover{
     color:black;
+}
+/******************** "galeria" ********************/
+.grilla{
+    display: flex;
+    flex-flow: row ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-grilla img{
+    margin:30px;
+
+}
+/******************** "blog" ********************/
+.blog{
+    background-color: #FDF9FA;
+}
+.img-blog img{
+    width: 100%;
+}
+.img-blog{
+    padding: 40px;
+}
+.blog-texto{
+    padding:50px;
+}
+.blog-texto h3{
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px
+}
+.blog-texto p{
+    color: black;
+    font-size: 20PX;
+    line-height: 45px;
+
+}
+
+/********************  QUERIES  ********************/
+
+
+@media (max-width: 1024px){
+
+    .social{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social h3{
+        text-align: center;
+    }
+
+    .redes_sociales{
+        margin-top: -20px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .historia{
+        background-repeat:no-repeat;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+    }
+    .story{
+        padding: 30px;
+    }
+    .icon img{
+        margin: 50px;
+    }
+    .story h3{
+        text-align: center;
+        font-size: 50px;
+    }
+    .story p{
+        font-weight: bold;
+    }
+}   
+@media (max-width: 720px){
+    .ultimo{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;  
+    }
+    .formulario{
+        margin: 30px;
+        width: 100%
+    }
+    .mapa{
+        width: 100%;
+    }
+    .btn-link{
+        font-size: 13px;
+    }
 }
